@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        .content {
+            border: 3px solid black;
+            display: inline-block;
+            padding: 15px 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="content" onclick="eventFunction()">Hello World!</p>
+    <script>
+        function eventFunction () {
+            let content = document.getElementsByClassName("content")[0];
+           
+            content.style.backgroundColor = "yellow";
+            content.style.fontWeight = "bold";
+        }
+    </script>
+</body>
+
+</html>
